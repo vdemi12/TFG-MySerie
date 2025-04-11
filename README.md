@@ -2,6 +2,8 @@
 
 Gestión de tus series favoritas | Proyecto fin de grado - CPIFP Alan Turing
 
+Desarrollada por **Víctor de Miguel Díez** e **Iván Caro Romero**
+
 <br>
 
 <h1 align="center"> 📌 Descripcion breve </h1>
