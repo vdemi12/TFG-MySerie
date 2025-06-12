@@ -32,6 +32,16 @@ En el siguiente canvas hay un breve tutorial de uso para las aplicaciones web y 
 
 <h1 align="center"> 🔗 Enlaces del Proyecto </h1>
 
+### **🌐 Aplicación Web (Ionic + Angular)**
+- **Repositorio:** [repositorio](https://github.com/vdemi12/ProyectoAngular)
+- **Netlify:** [netlify](https://myserie.netlify.app)
+
+<br>
+
+### **📱 Aplicación Móvil (Kotlin)**
+- **Repositorio:** [repositorio](https://github.com/vdemi12/ProyectoAndroid)
+- **APK:** [apk]()
+
 <br>
 
 <h1 align="center"> 🎞️ Presentación del Proyecto </h1>
