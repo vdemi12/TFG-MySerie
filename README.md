@@ -22,7 +22,7 @@ En el anteproyecto podras encontrar una descripcion un poco más detallada del p
 
 <br>
 
-<h1 align="center"> 📖 Tutorial de uso de las aplicaciones </h1>
+<h1 align="center"> 📖 Tutorial de uso de la aplicación </h1>
 
 En el siguiente canvas hay un breve tutorial de uso para las aplicaciones web y movil con capturas de pantallas. El tutorial de uso también esta disponible en formato pdf subido a este repositorio.
 
@@ -46,4 +46,4 @@ En el siguiente canvas hay un breve tutorial de uso para las aplicaciones web y 
 
 <br>
 
-<h1 align="center"> 💫 Diseño de la interfaz </h1>
+<h1 align="center"> 💫 Diseño de interfaces </h1>
