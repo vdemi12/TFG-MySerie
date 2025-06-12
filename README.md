@@ -40,7 +40,7 @@ En el siguiente canvas hay un breve tutorial de uso para las aplicaciones web y 
 
 ### **📱 Aplicación Móvil (Kotlin)**
 - **Repositorio:** [repositorio](https://github.com/vdemi12/ProyectoAndroid)
-- **APK:** [apk]()
+- **APK:** Subido a este repositorio.
 
 <br>
 
