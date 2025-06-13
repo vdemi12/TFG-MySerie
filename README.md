@@ -52,6 +52,84 @@ En el siguiente canvas hay un breve tutorial de uso para las aplicaciones web y 
 
 <br>
 
+<h1 align="center"> 📝 Bitácora de tareas realizadas </h1>
+
+**Bitácora de tareas** realizadas por fechas:
+<br>
+
+- **19 Marzo:**
+  <br>
+  - **Iván Caro:** Agregado de más idiomas de traducción (Aplicación Web)
+
+- **21 - 25 Marzo:**
+  <br>
+  - **Víctor de Miguel:** Agregado de ia para la sinopsis (Aplicación Web)
+
+- **26 Marzo:**
+  <br>
+  - **Víctor de Miguel:** Agregado de eliminación en cascada para que cuando se elimina una serie se eliminen sus temporadas (Aplicación Web)
+
+- **27 - 28 Marzo:**
+  <br>
+  - **Víctor de Miguel:** Agregado de comentarios de las series (Aplicación Web)
+  
+- **7 - 10 Abril:**
+  <br>
+  - **Víctor de Miguel:** Agregado de likes y dislikes de series en la página de comentarios (Aplicación Web)
+
+- **11 Abril:**
+  <br>
+  - **Víctor de Miguel:** Arreglo responsive y mejora de estilo (Aplicación Web)
+
+- **28 - 31 Mayo:**
+  <br>
+  - **Iván Caro:** Implementación de rol de administrador (Aplicación Web)
+
+- **1 - 3 Junio:**
+  <br>
+  - **Víctor de Miguel:** Arreglo problemas con imagenes y seleccionable (Aplicación Móvil)
+
+- **2 - 4 Junio:**
+  <br>
+  - **Iván Caro:** Figma y Balsamiq de la aplicación web
+
+- **3 - 4 Junio:**
+  <br>
+  - **Víctor de Miguel:** Implementación de notificaciones e imagen desde la galeria (Aplicación Móvil)
+
+- **4 - 5 Junio:** 
+  <br>
+  - **Iván Caro:** Implementación parte del proyecto de sistemas de gestión empresarial
+
+- **6 - 10 Junio:**
+  <br>
+  - **Víctor de Miguel:** Implementación quiz de series en el home (Aplicación Móvil)
+
+- **11 Junio:**
+  <br>
+  - **Víctor de Miguel:** Implementación de sonido al crear series y temporadas (Aplicación Móvil)
+
+- **11 - 12 Junio:**
+  <br>
+  - **Víctor de Miguel:** Implementación de animacion de bienvenida, permisos de notificación y scroll para dialogos (Aplicación Móvil)
+ 
+- **12 Junio:**
+  <br>
+  - **Víctor de Miguel:** Arreglo dependencias (Aplicación Web)
+  - **Iván Caro:** Informe PowerBI
+
+- **12 - 14 Junio:** 
+  <br>
+  - **Víctor de Miguel:** Implementación README del proyecto y presentación del proyecto 
+  - **Iván Caro:** Figma y Balsamiq de la aplicación móvil
+
+- **14 - 15 Junio:** 
+  <br>
+  - **Víctor de Miguel:** Creación video del proyecto
+  - **Iván Caro:** Creación video del proyecto
+
+<br>
+
 <h1 align="center"> 🛠️ Sistemas de gestión empresarial </h1>
 
 <br>
