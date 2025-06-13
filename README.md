@@ -132,6 +132,10 @@ En el siguiente canvas hay un breve tutorial de uso para las aplicaciones web y 
 
 <h1 align="center"> 🛠️ Sistemas de gestión empresarial </h1>
 
+Puedes encontrar un archivo subido a este repositorio de la primera opción dada para el proyecto de esta asignatura. Se hace uso de Python y de la librería Pandas para leer un archivo CSV con datos obtenidos de la aplicación desarrollada y despues se manipulan los datos haciendo uso de diferentes funciones.
+
 <br>
 
 <h1 align="center"> 💫 Diseño de interfaces </h1>
+
+Puedes encontrar subido a este repositorio el archivo del informe de Power BI. Los figmas y los balsamiq los encontraras en los links de más abajo,
