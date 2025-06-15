@@ -1,0 +1,952 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>repositorios documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+          <script>
+               // Blocking script to avoid flickering dark mode
+               // Dark mode toggle button
+               var useDark = window.matchMedia('(prefers-color-scheme: dark)');
+               var darkModeState = useDark.matches;
+               var $darkModeToggleSwitchers = document.querySelectorAll('.dark-mode-switch input');
+               var $darkModeToggles = document.querySelectorAll('.dark-mode-switch');
+               var darkModeStateLocal = localStorage.getItem('compodoc_darkmode-state');
+
+               function checkToggle(check) {
+                    for (var i = 0; i < $darkModeToggleSwitchers.length; i++) {
+                         $darkModeToggleSwitchers[i].checked = check;
+                    }
+               }
+
+               function toggleDarkMode(state) {
+                    if (window.localStorage) {
+                         localStorage.setItem('compodoc_darkmode-state', state);
+                    }
+
+                    checkToggle(state);
+
+                    const hasClass = document.body.classList.contains('dark');
+
+                    if (state) {
+                         for (var i = 0; i < $darkModeToggles.length; i++) {
+                              $darkModeToggles[i].classList.add('dark');
+                         }
+                         if (!hasClass) {
+                              document.body.classList.add('dark');
+                         }
+                    } else {
+                         for (var i = 0; i < $darkModeToggles.length; i++) {
+                              $darkModeToggles[i].classList.remove('dark');
+                         }
+                         if (hasClass) {
+                              document.body.classList.remove('dark');
+                         }
+                    }
+               }
+
+               useDark.addEventListener('change', function (evt) {
+                    toggleDarkMode(evt.matches);
+               });
+               if (darkModeStateLocal) {
+                    darkModeState = darkModeStateLocal === 'true';
+               }
+               toggleDarkMode(darkModeState);
+          </script>
+
+        <div class="navbar navbar-default navbar-fixed-top d-md-none p-0">
+               <div class="d-flex">
+                    <a href="../" class="navbar-brand">repositorios documentation</a>
+                    <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+               </div>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="d-none d-md-block menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  AppComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/app.component.ts</code>
+</p>
+
+
+
+
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-root</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./app.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./app.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#authSvc" >authSvc</a>
+                            </li>
+                            <li>
+                                <a href="#currentLang" >currentLang</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#changeLanguage" >changeLanguage</a>
+                            </li>
+                            <li>
+                                <a href="#logout" >logout</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(languageService: <a href="../injectables/LanguageService.html" target="_self">LanguageService</a>, authSvc: <a href="../injectables/BaseAuthenticationService.html" target="_self">BaseAuthenticationService</a>, router: Router)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/app.component.ts:12</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>languageService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LanguageService.html" target="_self" >LanguageService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authSvc</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/BaseAuthenticationService.html" target="_self" >BaseAuthenticationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code>Router</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeLanguage"></a>
+                    <span class="name">
+                        <span ><b>changeLanguage</b></span>
+                        <a href="#changeLanguage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeLanguage(lang: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="22"
+                                    class="link-to-prism">src/app/app.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>lang</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="logout"></a>
+                    <span class="name">
+                        <span ><b>logout</b></span>
+                        <a href="#logout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>logout()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="28"
+                                    class="link-to-prism">src/app/app.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="authSvc"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>authSvc</b></span>
+                        <a href="#authSvc"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/BaseAuthenticationService.html" target="_self" >BaseAuthenticationService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/app.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentLang"></a>
+                    <span class="name">
+                        <span ><b>currentLang</b></span>
+                        <a href="#currentLang"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/app.component.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+import { LanguageService } from &#x27;./core/services/language.service&#x27;;
+import { BaseAuthenticationService } from &#x27;./core/services/impl/base-authentication.service&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+
+@Component({
+  selector: &#x27;app-root&#x27;,
+  templateUrl: &#x27;./app.component.html&#x27;,
+  styleUrls: [&#x27;./app.component.scss&#x27;]
+})
+export class AppComponent {
+  currentLang: string;
+
+  constructor(
+    private languageService: LanguageService,
+    public authSvc: BaseAuthenticationService,
+    private router: Router
+  ) {
+    this.currentLang &#x3D; this.languageService.getStoredLanguage();
+  }
+
+  changeLanguage(lang: string) {
+    this.languageService.changeLanguage(lang);
+    this.currentLang &#x3D; lang;
+    this.languageService.storeLanguage(lang);
+  }
+
+  logout() {
+    this.authSvc.signOut().subscribe(()&#x3D;&gt;{
+      this.router.navigate([&#x27;/login&#x27;]);
+    });
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-app&gt;
+  &lt;ion-header&gt;
+    &lt;ion-toolbar class&#x3D;&quot;main-navbar&quot;&gt;
+      &lt;div class&#x3D;&quot;nav-content&quot;&gt;
+        &lt;div class&#x3D;&quot;brand-section&quot;&gt;
+          &lt;img src&#x3D;&quot;assets/icon/fav.png&quot; alt&#x3D;&quot;Logo&quot; class&#x3D;&quot;nav-logo&quot;/&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Mobile menu button --&gt;
+        &lt;ion-buttons slot&#x3D;&quot;start&quot; class&#x3D;&quot;menu-button-mobile&quot;&gt;
+          &lt;ion-menu-button&gt;&lt;/ion-menu-button&gt;
+        &lt;/ion-buttons&gt;
+
+        &lt;!-- Desktop menu items --&gt;
+        &lt;div class&#x3D;&quot;nav-items desktop-menu&quot; *ngIf&#x3D;&quot;authSvc.authenticated$ | async&quot;&gt;
+          &lt;ion-button fill&#x3D;&quot;clear&quot; routerLink&#x3D;&quot;/home&quot; routerDirection&#x3D;&quot;root&quot;&gt;
+            &lt;ion-icon name&#x3D;&quot;home-outline&quot;&gt;&lt;/ion-icon&gt;
+            {{ &#x27;MENU.HOME&#x27; | translate }}
+          &lt;/ion-button&gt;
+
+          &lt;ion-button fill&#x3D;&quot;clear&quot; routerLink&#x3D;&quot;/series&quot; routerDirection&#x3D;&quot;root&quot;&gt;
+            &lt;ion-icon name&#x3D;&quot;film-outline&quot;&gt;&lt;/ion-icon&gt;
+            {{ &#x27;MENU.SERIES&#x27; | translate }}
+          &lt;/ion-button&gt;
+
+          &lt;ion-button fill&#x3D;&quot;clear&quot; routerLink&#x3D;&quot;/seasons&quot; routerDirection&#x3D;&quot;root&quot;&gt;
+            &lt;ion-icon name&#x3D;&quot;albums-outline&quot;&gt;&lt;/ion-icon&gt;
+            {{ &#x27;MENU.SEASONS&#x27; | translate }}
+          &lt;/ion-button&gt;
+
+          &lt;ion-button fill&#x3D;&quot;clear&quot; routerLink&#x3D;&quot;/about&quot; routerDirection&#x3D;&quot;root&quot;&gt;
+            &lt;ion-icon name&#x3D;&quot;information-circle-outline&quot;&gt;&lt;/ion-icon&gt;
+            {{ &#x27;MENU.ABOUT&#x27; | translate }}
+          &lt;/ion-button&gt;
+        &lt;/div&gt;
+        
+        &lt;div class&#x3D;&quot;user-section&quot; *ngIf&#x3D;&quot;authSvc.authenticated$ | async&quot;&gt;
+          &lt;ion-fab horizontal&#x3D;&quot;end&quot;&gt;
+            &lt;ion-fab-button size&#x3D;&quot;small&quot;&gt;
+              &lt;ion-icon name&#x3D;&quot;language-outline&quot;&gt;&lt;/ion-icon&gt;
+            &lt;/ion-fab-button&gt;
+            &lt;ion-fab-list side&#x3D;&quot;start&quot;&gt;
+              &lt;ion-fab-button (click)&#x3D;&quot;changeLanguage(&#x27;español&#x27;)&quot; [color]&#x3D;&quot;currentLang &#x3D;&#x3D;&#x3D; &#x27;español&#x27; ? &#x27;&#x27; : &#x27;medium&#x27;&quot;&gt;
+                &lt;ion-text&gt;ES&lt;/ion-text&gt;
+              &lt;/ion-fab-button&gt;
+              &lt;ion-fab-button (click)&#x3D;&quot;changeLanguage(&#x27;ingles&#x27;)&quot; [color]&#x3D;&quot;currentLang &#x3D;&#x3D;&#x3D; &#x27;ingles&#x27; ? &#x27;&#x27; : &#x27;medium&#x27;&quot;&gt;
+                &lt;ion-text&gt;EN&lt;/ion-text&gt;
+              &lt;/ion-fab-button&gt;
+              &lt;ion-fab-button (click)&#x3D;&quot;changeLanguage(&#x27;ruso&#x27;)&quot; [color]&#x3D;&quot;currentLang &#x3D;&#x3D;&#x3D; &#x27;ruso&#x27; ? &#x27;&#x27; : &#x27;medium&#x27;&quot;&gt;
+                &lt;ion-text&gt;RU&lt;/ion-text&gt;
+              &lt;/ion-fab-button&gt;
+            &lt;/ion-fab-list&gt;
+          &lt;/ion-fab&gt;
+
+          &lt;ion-button fill&#x3D;&quot;clear&quot; id&#x3D;&quot;profile-trigger&quot; class&#x3D;&quot;profile-button&quot;&gt;
+            &lt;ion-avatar slot&#x3D;&quot;start&quot;&gt;
+              &lt;img [src]&#x3D;&quot;(authSvc.user$ | async)?.picture || &#x27;https://ionicframework.com/docs/img/demos/avatar.svg&#x27;&quot; alt&#x3D;&quot;Avatar&quot;/&gt;
+            &lt;/ion-avatar&gt;
+            &lt;ion-label&gt;{{ (authSvc.user$ | async)?.name || (authSvc.user$ | async)?.username }}&lt;/ion-label&gt;
+            &lt;ion-icon name&#x3D;&quot;chevron-down-outline&quot;&gt;&lt;/ion-icon&gt;
+          &lt;/ion-button&gt;
+          &lt;ion-popover trigger&#x3D;&quot;profile-trigger&quot; [dismissOnSelect]&#x3D;&quot;true&quot;&gt;
+            &lt;ng-template&gt;
+              &lt;ion-content&gt;
+                &lt;ion-list lines&#x3D;&quot;none&quot;&gt;
+                  &lt;ion-item button routerLink&#x3D;&quot;/profile&quot; routerDirection&#x3D;&quot;root&quot;&gt;
+                    &lt;ion-icon name&#x3D;&quot;person-outline&quot; slot&#x3D;&quot;start&quot;&gt;&lt;/ion-icon&gt;
+                    &lt;ion-label&gt;{{ &#x27;MENU.PROFILE&#x27; | translate }}&lt;/ion-label&gt;
+                  &lt;/ion-item&gt;
+                  &lt;ion-item button (click)&#x3D;&quot;logout()&quot; class&#x3D;&quot;logout-item&quot;&gt;
+                    &lt;ion-icon name&#x3D;&quot;log-out-outline&quot; slot&#x3D;&quot;start&quot;&gt;&lt;/ion-icon&gt;
+                    &lt;ion-label&gt;{{ &#x27;MENU.LOGOUT&#x27; | translate }}&lt;/ion-label&gt;
+                  &lt;/ion-item&gt;
+                &lt;/ion-list&gt;
+              &lt;/ion-content&gt;
+            &lt;/ng-template&gt;
+          &lt;/ion-popover&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/ion-toolbar&gt;
+  &lt;/ion-header&gt;
+
+  &lt;!-- Mobile side menu --&gt;
+  &lt;ion-menu side&#x3D;&quot;start&quot; contentId&#x3D;&quot;mainContent&quot;&gt;
+    &lt;ion-header&gt;
+      &lt;ion-toolbar&gt;
+        &lt;ion-title&gt;{{ &#x27;MENU.TITLE&#x27; | translate }}&lt;/ion-title&gt;
+      &lt;/ion-toolbar&gt;
+    &lt;/ion-header&gt;
+    &lt;ion-content&gt;
+      &lt;ion-list&gt;
+        &lt;ion-item routerLink&#x3D;&quot;/home&quot; routerDirection&#x3D;&quot;root&quot;&gt;
+          &lt;ion-icon name&#x3D;&quot;home-outline&quot; slot&#x3D;&quot;start&quot;&gt;&lt;/ion-icon&gt;
+          &lt;ion-label&gt;{{ &#x27;MENU.HOME&#x27; | translate }}&lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+        &lt;ion-item routerLink&#x3D;&quot;/series&quot; routerDirection&#x3D;&quot;root&quot;&gt;
+          &lt;ion-icon name&#x3D;&quot;film-outline&quot; slot&#x3D;&quot;start&quot;&gt;&lt;/ion-icon&gt;
+          &lt;ion-label&gt;{{ &#x27;MENU.SERIES&#x27; | translate }}&lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+        &lt;ion-item routerLink&#x3D;&quot;/seasons&quot; routerDirection&#x3D;&quot;root&quot;&gt;
+          &lt;ion-icon name&#x3D;&quot;albums-outline&quot; slot&#x3D;&quot;start&quot;&gt;&lt;/ion-icon&gt;
+          &lt;ion-label&gt;{{ &#x27;MENU.SEASONS&#x27; | translate }}&lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+        &lt;ion-item routerLink&#x3D;&quot;/about&quot; routerDirection&#x3D;&quot;root&quot;&gt;
+          &lt;ion-icon name&#x3D;&quot;information-circle-outline&quot; slot&#x3D;&quot;start&quot;&gt;&lt;/ion-icon&gt;
+          &lt;ion-label&gt;{{ &#x27;MENU.ABOUT&#x27; | translate }}&lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+      &lt;/ion-list&gt;
+    &lt;/ion-content&gt;
+  &lt;/ion-menu&gt;
+
+  &lt;ion-router-outlet id&#x3D;&quot;mainContent&quot;&gt;&lt;/ion-router-outlet&gt;
+&lt;/ion-app&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./app.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.main-navbar {
+  --background: linear-gradient(45deg, #ffffff, #ff5722);
+  --color: white;
+  --min-height: 60px;
+
+  .nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 100%;
+
+    .brand-section {
+      .nav-logo {
+        height: 40px;
+        width: auto;
+      }
+    }
+
+    .menu-button-mobile {
+      display: none;
+    }
+
+    .nav-items {
+      display: flex;
+      gap: 8px;
+      
+      ion-button {
+        --color: rgb(58, 57, 57);
+        --padding-start: 12px;
+        --padding-end: 12px;
+        height: 40px;
+        
+        ion-icon {
+          margin-right: 8px;
+        }
+
+        &amp;:hover {
+          --background: rgba(255, 255, 255, 0.1);
+        }
+      }
+    }
+
+    .user-section {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      ion-fab {
+        position: relative;
+        height: 40px;
+        
+        ion-fab-button {
+          --background: rgba(255, 255, 255, 0.9);
+          --color: #ff5722;
+          width: 40px;
+          height: 40px;
+          margin: 0;
+        }
+        ion-fab-list{
+          ion-fab-button {
+            --background: #ffe9e2;
+            --color: #000000;
+            margin-right: 3px ;
+            margin-bottom: 17px;
+          }
+        }
+      }
+
+      .profile-button {
+        --background: rgba(255, 255, 255, 0.1);
+        --color: white;
+        --border-radius: 20px;
+        --padding-start: 8px;
+        --padding-end: 12px;
+        height: 40px;
+
+        ion-avatar {
+          width: 28px;
+          height: 28px;
+          margin-right: 8px;
+        }
+
+        &amp;:hover {
+          --background: rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+  }
+}
+
+// Mobile styles
+@media (max-width: 768px) {
+  .main-navbar .nav-content {
+    .menu-button-mobile {
+      display: block;
+      order: 1;
+    }
+
+    .brand-section {
+      order: 2;
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .desktop-menu {
+      display: none;
+    }
+
+    .user-section {
+      order: 3;
+      
+      .profile-button ion-label {
+        display: none;
+      }
+    }
+    .brand-section{
+      display: none;
+    }
+  }
+}
+
+// Side menu styles
+ion-menu {
+  --background: #ffffff;
+
+  ion-toolbar {
+    --background: linear-gradient(45deg, #ff5722, #ff9800);
+    --color: white;
+  }
+
+  ion-content {
+    --background: #ffffff;
+  }
+
+  ion-list {
+    background: #ffffff;
+  }
+
+  ion-item {
+    --padding-start: 16px;
+    margin: 8px;
+    border-radius: 8px;
+    --background: linear-gradient(45deg, #ff9800, #ff5722);
+    
+    ion-icon {
+      color: #ffffff;
+      margin-right: 16px;
+      font-weight: bold;
+    }
+  }
+}
+
+.menu-button-mobile {
+  ion-menu-button {
+    --color: #ff5722;
+  }
+}
+
+// Existing popover styles...
+ion-popover {
+  --width: 200px;
+  --background: none;
+  ion-list {
+    background: white;
+    --background: white;
+  }
+  ion-item {
+    --padding-start: 16px;
+    --padding-end: 16px;
+    --border-radius: 8px;
+    margin-bottom: 4px;
+    background: white;
+    --background: white;
+    color: #000000;
+
+    ion-icon {
+      color: #ff5722;
+      margin-right: 12px;
+    }
+
+    &amp;.logout-item {
+      color: #f44336;
+      
+      ion-icon {
+        color: #f44336;
+      }
+      &amp;:hover {
+        --background: rgba(255, 87, 34, 0.1);
+        --color: #f44336;
+      }
+    }
+
+    &amp;:hover {
+      --background: rgba(255, 87, 34, 0.1);
+      --color: #000000;
+    }
+  }
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-app>  <ion-header>    <ion-toolbar class="main-navbar">      <div class="nav-content">        <div class="brand-section">          <img src="assets/icon/fav.png" alt="Logo" class="nav-logo"/>        </div>        <!-- Mobile menu button -->        <ion-buttons slot="start" class="menu-button-mobile">          <ion-menu-button></ion-menu-button>        </ion-buttons>        <!-- Desktop menu items -->        <div class="nav-items desktop-menu" *ngIf="authSvc.authenticated$ | async">          <ion-button fill="clear" routerLink="/home" routerDirection="root">            <ion-icon name="home-outline"></ion-icon>            {{ \'MENU.HOME\' | translate }}          </ion-button>          <ion-button fill="clear" routerLink="/series" routerDirection="root">            <ion-icon name="film-outline"></ion-icon>            {{ \'MENU.SERIES\' | translate }}          </ion-button>          <ion-button fill="clear" routerLink="/seasons" routerDirection="root">            <ion-icon name="albums-outline"></ion-icon>            {{ \'MENU.SEASONS\' | translate }}          </ion-button>          <ion-button fill="clear" routerLink="/about" routerDirection="root">            <ion-icon name="information-circle-outline"></ion-icon>            {{ \'MENU.ABOUT\' | translate }}          </ion-button>        </div>                <div class="user-section" *ngIf="authSvc.authenticated$ | async">          <ion-fab horizontal="end">            <ion-fab-button size="small">              <ion-icon name="language-outline"></ion-icon>            </ion-fab-button>            <ion-fab-list side="start">              <ion-fab-button (click)="changeLanguage(\'español\')" [color]="currentLang === \'español\' ? \'\' : \'medium\'">                <ion-text>ES</ion-text>              </ion-fab-button>              <ion-fab-button (click)="changeLanguage(\'ingles\')" [color]="currentLang === \'ingles\' ? \'\' : \'medium\'">                <ion-text>EN</ion-text>              </ion-fab-button>              <ion-fab-button (click)="changeLanguage(\'ruso\')" [color]="currentLang === \'ruso\' ? \'\' : \'medium\'">                <ion-text>RU</ion-text>              </ion-fab-button>            </ion-fab-list>          </ion-fab>          <ion-button fill="clear" id="profile-trigger" class="profile-button">            <ion-avatar slot="start">              <img [src]="(authSvc.user$ | async)?.picture || \'https://ionicframework.com/docs/img/demos/avatar.svg\'" alt="Avatar"/>            </ion-avatar>            <ion-label>{{ (authSvc.user$ | async)?.name || (authSvc.user$ | async)?.username }}</ion-label>            <ion-icon name="chevron-down-outline"></ion-icon>          </ion-button>          <ion-popover trigger="profile-trigger" [dismissOnSelect]="true">            <ng-template>              <ion-content>                <ion-list lines="none">                  <ion-item button routerLink="/profile" routerDirection="root">                    <ion-icon name="person-outline" slot="start"></ion-icon>                    <ion-label>{{ \'MENU.PROFILE\' | translate }}</ion-label>                  </ion-item>                  <ion-item button (click)="logout()" class="logout-item">                    <ion-icon name="log-out-outline" slot="start"></ion-icon>                    <ion-label>{{ \'MENU.LOGOUT\' | translate }}</ion-label>                  </ion-item>                </ion-list>              </ion-content>            </ng-template>          </ion-popover>        </div>      </div>    </ion-toolbar>  </ion-header>  <!-- Mobile side menu -->  <ion-menu side="start" contentId="mainContent">    <ion-header>      <ion-toolbar>        <ion-title>{{ \'MENU.TITLE\' | translate }}</ion-title>      </ion-toolbar>    </ion-header>    <ion-content>      <ion-list>        <ion-item routerLink="/home" routerDirection="root">          <ion-icon name="home-outline" slot="start"></ion-icon>          <ion-label>{{ \'MENU.HOME\' | translate }}</ion-label>        </ion-item>        <ion-item routerLink="/series" routerDirection="root">          <ion-icon name="film-outline" slot="start"></ion-icon>          <ion-label>{{ \'MENU.SERIES\' | translate }}</ion-label>        </ion-item>        <ion-item routerLink="/seasons" routerDirection="root">          <ion-icon name="albums-outline" slot="start"></ion-icon>          <ion-label>{{ \'MENU.SEASONS\' | translate }}</ion-label>        </ion-item>        <ion-item routerLink="/about" routerDirection="root">          <ion-icon name="information-circle-outline" slot="start"></ion-icon>          <ion-label>{{ \'MENU.ABOUT\' | translate }}</ion-label>        </ion-item>      </ion-list>    </ion-content>  </ion-menu>  <ion-router-outlet id="mainContent"></ion-router-outlet></ion-app></div>'
+    var COMPONENTS = [{'name': 'AboutPage', 'selector': 'app-about'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CommentsPage', 'selector': 'app-comments-page'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'PictureSelectableComponent', 'selector': 'app-picture-selectable'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'RegisterPage', 'selector': 'app-register'},{'name': 'SeasonModalComponent', 'selector': 'app-season-modal'},{'name': 'SeasonsPage', 'selector': 'app-seasons'},{'name': 'SeasonViewComponent', 'selector': 'app-season-view'},{'name': 'SerieModalComponent', 'selector': 'app-serie-modal'},{'name': 'SerieSelectableComponent', 'selector': 'app-serie-selectable'},{'name': 'SeriesPage', 'selector': 'app-series'},{'name': 'SerieViewComponent', 'selector': 'app-serie-view'},{'name': 'SplashPage', 'selector': 'app-splash'}];
+    var DIRECTIVES = [{'name': 'OnlyAllowedCharactersDirective', 'selector': '[appOnlyAllowedCharacters]'}];
+    var ACTUAL_COMPONENT = {'name': 'AppComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AppComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script>
+               $darkModeToggleSwitchers = document.querySelectorAll('.dark-mode-switch input');
+               checkToggle(darkModeState);
+               if ($darkModeToggleSwitchers.length > 0) {
+                    for (var i = 0; i < $darkModeToggleSwitchers.length; i++) {
+                         $darkModeToggleSwitchers[i].addEventListener('change', function (event) {
+                              darkModeState = !darkModeState;
+                              toggleDarkMode(darkModeState);
+                         });
+                    }
+               }
+          </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

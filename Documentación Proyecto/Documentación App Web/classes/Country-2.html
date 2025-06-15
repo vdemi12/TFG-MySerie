@@ -1,0 +1,665 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>repositorios documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+          <script>
+               // Blocking script to avoid flickering dark mode
+               // Dark mode toggle button
+               var useDark = window.matchMedia('(prefers-color-scheme: dark)');
+               var darkModeState = useDark.matches;
+               var $darkModeToggleSwitchers = document.querySelectorAll('.dark-mode-switch input');
+               var $darkModeToggles = document.querySelectorAll('.dark-mode-switch');
+               var darkModeStateLocal = localStorage.getItem('compodoc_darkmode-state');
+
+               function checkToggle(check) {
+                    for (var i = 0; i < $darkModeToggleSwitchers.length; i++) {
+                         $darkModeToggleSwitchers[i].checked = check;
+                    }
+               }
+
+               function toggleDarkMode(state) {
+                    if (window.localStorage) {
+                         localStorage.setItem('compodoc_darkmode-state', state);
+                    }
+
+                    checkToggle(state);
+
+                    const hasClass = document.body.classList.contains('dark');
+
+                    if (state) {
+                         for (var i = 0; i < $darkModeToggles.length; i++) {
+                              $darkModeToggles[i].classList.add('dark');
+                         }
+                         if (!hasClass) {
+                              document.body.classList.add('dark');
+                         }
+                    } else {
+                         for (var i = 0; i < $darkModeToggles.length; i++) {
+                              $darkModeToggles[i].classList.remove('dark');
+                         }
+                         if (hasClass) {
+                              document.body.classList.remove('dark');
+                         }
+                    }
+               }
+
+               useDark.addEventListener('change', function (evt) {
+                    toggleDarkMode(evt.matches);
+               });
+               if (darkModeStateLocal) {
+                    darkModeState = darkModeStateLocal === 'true';
+               }
+               toggleDarkMode(darkModeState);
+          </script>
+
+        <div class="navbar navbar-default navbar-fixed-top d-md-none p-0">
+               <div class="d-flex">
+                    <a href="../" class="navbar-brand">repositorios documentation</a>
+                    <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+               </div>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="d-none d-md-block menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Classes</li>
+  <li class="breadcrumb-item" >Country</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/pages/seasons/seasons.page.ts</code>
+        </p>
+
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Optional</span>
+                                <a href="#id" >id</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Optional</span>
+                                <a href="#name" >name</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Optional</span>
+                                <a href="#ports" >ports</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="id"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Optional</span>
+                        <span ><b>id</b></span>
+                        <a href="#id"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/pages/seasons/seasons.page.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="name"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Optional</span>
+                        <span ><b>name</b></span>
+                        <a href="#name"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/pages/seasons/seasons.page.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ports"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Optional</span>
+                        <span ><b>ports</b></span>
+                        <a href="#ports"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Port[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/pages/seasons/seasons.page.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  Component,
+  ElementRef,
+  Inject,
+  OnInit,
+  QueryList,
+  ViewChild,
+  ViewChildren,
+} from &#x27;@angular/core&#x27;;
+import {
+  AlertController,
+  AnimationController,
+  InfiniteScrollCustomEvent,
+  ModalController,
+  Platform,
+} from &#x27;@ionic/angular&#x27;;
+import { BehaviorSubject, lastValueFrom, Observable, Subscription } from &#x27;rxjs&#x27;;
+import { Serie } from &#x27;src/app/core/models/serie.model&#x27;;
+import { Paginated } from &#x27;src/app/core/models/paginated.model&#x27;;
+import { Season } from &#x27;src/app/core/models/season.model&#x27;;
+import { SeriesService } from &#x27;src/app/core/services/impl/series.service&#x27;;
+import { SeasonsService } from &#x27;src/app/core/services/impl/seasons.service&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+import { SeasonModalComponent } from &#x27;src/app/shared/components/season-modal/season-modal.component&#x27;;
+import { SEASONS_COLLECTION_SUBSCRIPTION_TOKEN } from &#x27;src/app/core/repositories/repository.tokens&#x27;;
+import { ICollectionSubscription } from &#x27;src/app/core/services/interfaces/collection-subscription.interface&#x27;;
+import { CollectionChange } from &#x27;src/app/core/services/interfaces/collection-subscription.interface&#x27;;
+import { FirebaseAuthenticationService } from &#x27;src/app/core/services/impl/firebase-authentication.service&#x27;;
+
+export class Country {
+  public id?: number;
+  public name?: string;
+  public ports?: Port[];
+}
+export class Port {
+  public id?: number;
+  public name?: string;
+  public country?: Country;
+}
+@Component({
+  selector: &#x27;app-seasons&#x27;,
+  templateUrl: &#x27;./seasons.page.html&#x27;,
+  styleUrls: [&#x27;./seasons.page.scss&#x27;],
+})
+export class SeasonsPage implements OnInit {
+  isAdmin &#x3D; false;
+  ports: Port[] &#x3D; [];
+  port!: Port;
+  page_ &#x3D; 2;
+  portsSubscription!: Subscription;
+  _seasons: BehaviorSubject&lt;Season[]&gt; &#x3D; new BehaviorSubject&lt;Season[]&gt;([]);
+  seasons$: Observable&lt;Season[]&gt; &#x3D; this._seasons.asObservable();
+  _filteredSeasons: BehaviorSubject&lt;Season[]&gt; &#x3D; new BehaviorSubject&lt;Season[]&gt;(
+    []
+  );
+  filteredSeasons$: Observable&lt;Season[]&gt; &#x3D; this._filteredSeasons.asObservable();
+  searchTerm: string &#x3D; &#x27;&#x27;;
+
+  public alertYesNoButtons &#x3D; [
+    {
+      text: &#x27;No&#x27;,
+      role: &#x27;no&#x27;,
+    },
+    {
+      text: &#x27;Yes&#x27;,
+      role: &#x27;yes&#x27;,
+    },
+  ];
+  isWeb: boolean &#x3D; false;
+  private loadedIds: Set&lt;string&gt; &#x3D; new Set();
+
+  constructor(
+    private animationCtrl: AnimationController,
+    private seasonsSvc: SeasonsService,
+    private serieSvc: SeriesService,
+    private modalCtrl: ModalController,
+    private translate: TranslateService,
+    private alertCtrl: AlertController,
+    private platform: Platform,
+    private authSvc: FirebaseAuthenticationService,
+    @Inject(SEASONS_COLLECTION_SUBSCRIPTION_TOKEN)
+    private seasonsSubscription: ICollectionSubscription&lt;Season&gt;
+  ) {
+    this.isWeb &#x3D; this.platform.is(&#x27;desktop&#x27;);
+  }
+
+  ngOnInit(): void {
+    this.loadSeasons();
+
+    this.authSvc
+      .getCurrentUser()
+      .then((user) &#x3D;&gt; {
+        this.isAdmin &#x3D; user.admin;
+      })
+      .catch(() &#x3D;&gt; {
+        this.isAdmin &#x3D; false;
+      });
+
+    this._seasons.subscribe((seasons) &#x3D;&gt; {
+      this._filteredSeasons.next(seasons);
+    });
+
+    this.seasonsSubscription
+      .subscribe(&#x27;seasons&#x27;)
+      .subscribe((change: CollectionChange&lt;Season&gt;) &#x3D;&gt; {
+        const currentSeasons &#x3D; [...this._seasons.value];
+
+        // Solo procesar cambios de documentos que ya tenemos cargados
+        if (!this.loadedIds.has(change.id) &amp;&amp; change.type !&#x3D;&#x3D; &#x27;added&#x27;) {
+          return;
+        }
+
+        switch (change.type) {
+          case &#x27;added&#x27;:
+            // Registrar el nuevo ID en nuestro conjunto de IDs cargados
+            this.loadedIds.add(change.id);
+
+            // Verificar si ya existe en nuestro array local
+            const existingIndex &#x3D; currentSeasons.findIndex(
+              (p) &#x3D;&gt; p.id &#x3D;&#x3D;&#x3D; change.id
+            );
+            if (existingIndex &#x3D;&#x3D;&#x3D; -1) {
+              currentSeasons.push(change.data!);
+              currentSeasons.sort((a, b) &#x3D;&gt;
+                (a.name || &#x27;&#x27;).localeCompare(b.name || &#x27;&#x27;)
+              );
+            }
+            break;
+          case &#x27;modified&#x27;:
+            const index &#x3D; currentSeasons.findIndex((p) &#x3D;&gt; p.id &#x3D;&#x3D;&#x3D; change.id);
+            if (index &gt;&#x3D; 0) {
+              currentSeasons[index] &#x3D; change.data!;
+              currentSeasons.sort((a, b) &#x3D;&gt;
+                (a.name || &#x27;&#x27;).localeCompare(b.name || &#x27;&#x27;)
+              );
+            }
+            break;
+          case &#x27;removed&#x27;:
+            const removeIndex &#x3D; currentSeasons.findIndex(
+              (p) &#x3D;&gt; p.id &#x3D;&#x3D;&#x3D; change.id
+            );
+            if (removeIndex &gt;&#x3D; 0) {
+              currentSeasons.splice(removeIndex, 1);
+              this.loadedIds.delete(change.id);
+            }
+            break;
+        }
+
+        this._seasons.next(currentSeasons);
+      });
+  }
+
+  @ViewChildren(&#x27;avatar&#x27;) avatars!: QueryList&lt;ElementRef&gt;;
+  @ViewChild(&#x27;animatedAvatar&#x27;) animatedAvatar!: ElementRef;
+  @ViewChild(&#x27;animatedAvatarContainer&#x27;) animatedAvatarContainer!: ElementRef;
+
+  selectedSeason: any &#x3D; null;
+  isAnimating &#x3D; false;
+  page: number &#x3D; 1;
+  pageSize: number &#x3D; 25;
+  pages: number &#x3D; 0;
+
+  onSearch(event: any) {
+    const searchTerm &#x3D; event.target.value.toLowerCase();
+    this.searchTerm &#x3D; searchTerm;
+
+    if (!searchTerm) {
+      this._filteredSeasons.next(this._seasons.value);
+      return;
+    }
+
+    const filtered &#x3D; this._seasons.value.filter((season) &#x3D;&gt;
+      season.name.toLowerCase().includes(searchTerm)
+    );
+
+    this._filteredSeasons.next(filtered);
+  }
+
+  loadSeasons() {
+    this.page &#x3D; 1;
+    this.seasonsSvc.getAll(this.page, this.pageSize).subscribe({
+      next: (response: Paginated&lt;Season&gt;) &#x3D;&gt; {
+        // Actualizar el registro de IDs cargados
+        response.data.forEach((season) &#x3D;&gt; this.loadedIds.add(season.id));
+
+        const sortedSeasons &#x3D; response.data.sort((a, b) &#x3D;&gt;
+          (a.name || &#x27;&#x27;).localeCompare(b.name || &#x27;&#x27;)
+        );
+
+        this._seasons.next([...sortedSeasons]);
+        this._filteredSeasons.next([...sortedSeasons]);
+        this.page++;
+        this.pages &#x3D; response.pages;
+      },
+    });
+  }
+
+  loadMoreSeasons(notify: HTMLIonInfiniteScrollElement | null &#x3D; null) {
+    if (this.page &lt;&#x3D; this.pages) {
+      this.seasonsSvc.getAll(this.page, this.pageSize).subscribe({
+        next: (response: Paginated&lt;Season&gt;) &#x3D;&gt; {
+          // Actualizar el registro de IDs cargados
+          response.data.forEach((season) &#x3D;&gt; this.loadedIds.add(season.id));
+
+          const updatedSeasons &#x3D; [
+            ...this._seasons.value,
+            ...response.data,
+          ].sort((a, b) &#x3D;&gt; (a.name || &#x27;&#x27;).localeCompare(b.name || &#x27;&#x27;));
+          this._seasons.next(updatedSeasons);
+
+          if (this.searchTerm) {
+            const filtered &#x3D; updatedSeasons.filter((season) &#x3D;&gt;
+              season.name.toLowerCase().includes(this.searchTerm)
+            );
+            this._filteredSeasons.next(filtered);
+          } else {
+            this._filteredSeasons.next(updatedSeasons);
+          }
+          this.page++;
+          notify?.complete();
+        },
+      });
+    } else {
+      notify?.complete();
+    }
+  }
+
+  async openSeasonDetail(season: any, index: number) {
+    await this.presentModalSeason(&#x27;edit&#x27;, season);
+    this.selectedSeason &#x3D; season;
+  }
+
+  onIonInfinite(ev: InfiniteScrollCustomEvent) {
+    this.loadMoreSeasons(ev.target);
+  }
+
+  private async presentModalSeason(
+    mode: &#x27;new&#x27; | &#x27;edit&#x27;,
+    season: Season | undefined &#x3D; undefined
+  ) {
+    let _series: Serie[] &#x3D; await lastValueFrom(this.serieSvc.getAll());
+    const modal &#x3D; await this.modalCtrl.create({
+      component: SeasonModalComponent,
+      componentProps:
+        mode &#x3D;&#x3D; &#x27;edit&#x27;
+          ? {
+              season: season,
+              series: _series,
+            }
+          : {
+              series: _series,
+            },
+    });
+    modal.onDidDismiss().then((response: any) &#x3D;&gt; {
+      switch (response.role) {
+        case &#x27;new&#x27;:
+          this.seasonsSvc.add(response.data).subscribe({
+            next: (res) &#x3D;&gt; {
+              this.loadSeasons();
+            },
+            error: (err) &#x3D;&gt; {},
+          });
+          break;
+        case &#x27;edit&#x27;:
+          this.seasonsSvc.update(season!.id, response.data).subscribe({
+            next: (res) &#x3D;&gt; {
+              this.loadSeasons();
+            },
+            error: (err) &#x3D;&gt; {},
+          });
+          break;
+        default:
+          break;
+      }
+    });
+    await modal.present();
+  }
+
+  async onAddSeason() {
+    await this.presentModalSeason(&#x27;new&#x27;);
+  }
+
+  async onDeleteSeason(season: Season) {
+    const alert &#x3D; await this.alertCtrl.create({
+      header: await this.translate
+        .get(&#x27;SEASONS.MESSAGES.DELETE_CONFIRM&#x27;)
+        .toPromise(),
+      cssClass: &#x27;custom-delete-alert&#x27;,
+      buttons: [
+        {
+          text: &#x27;Cancel&#x27;,
+          role: &#x27;cancel&#x27;,
+        },
+        {
+          text: &#x27;OK&#x27;,
+          role: &#x27;yes&#x27;,
+          handler: () &#x3D;&gt; {
+            this.seasonsSvc.delete(season.id).subscribe({
+              next: (response) &#x3D;&gt; {
+                this.loadSeasons();
+              },
+              error: (err) &#x3D;&gt; {},
+            });
+          },
+        },
+      ],
+    });
+
+    await alert.present();
+  }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'Country-2.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script>
+               $darkModeToggleSwitchers = document.querySelectorAll('.dark-mode-switch input');
+               checkToggle(darkModeState);
+               if ($darkModeToggleSwitchers.length > 0) {
+                    for (var i = 0; i < $darkModeToggleSwitchers.length; i++) {
+                         $darkModeToggleSwitchers[i].addEventListener('change', function (event) {
+                              darkModeState = !darkModeState;
+                              toggleDarkMode(darkModeState);
+                         });
+                    }
+               }
+          </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
