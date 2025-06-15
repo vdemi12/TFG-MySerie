@@ -138,4 +138,4 @@ Puedes encontrar un archivo subido a este repositorio de la primera opción dada
 
 <h1 align="center"> 💫 Diseño de interfaces </h1>
 
-Puedes encontrar subido a este repositorio el archivo del informe de Power BI. Los figmas y los balsamiq los encontraras en los links de más abajo,
+Puedes encontrar subido a este repositorio el archivo del informe de Power BI. Los figmas y los balsamiq los encontraras en los links de más abajo. Y por último la documentación de la aplicación web se ha realizado con Compodoc y la documentación de la aplicación móvil se ha realizado con Dokka, y podras encontrarla subida ha este repositorio y en los archivos de ambas aplicaciones.
