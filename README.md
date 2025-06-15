@@ -125,8 +125,8 @@ En el siguiente canvas hay un breve tutorial de uso para las aplicaciones web y 
 
 - **14 - 15 Junio:** 
   <br>
-  - **Víctor de Miguel:** Creación video del proyecto
-  - **Iván Caro:** Creación video del proyecto
+  - **Víctor de Miguel:** Creación video del proyecto y documentación
+  - **Iván Caro:** Creación video del proyecto y documentación
 
 <br>
 
