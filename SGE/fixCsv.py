@@ -18,7 +18,7 @@ df["numero de temporada"].fillna(0, inplace=True)
 df["rating"].fillna(df["rating"].mean().round(1), inplace=True)
 df["fecha de lanzamiento"].fillna(method='ffill', inplace=True)
 
-# 4. Arreglar nombres inconsistentes (opcional - ejemplo básico)
+# 4. Arreglar nombres inconsistentes
 df["nombre"] = df["nombre"].str.replace("Tres", "3", regex=False)
 df["nombre"] = df["nombre"].str.replace("Temp", "temporada", regex=False)
 
@@ -36,7 +36,7 @@ id_to_nombre = {
 
 df["nombre_serie"] = df["idSerie"].map(id_to_nombre)
 
-# 7. Agrupación: cantidad de temporadas por serie (usando nombres)
+# 7. Agrupación: cantidad de temporadas por serie
 resumen_series = df.groupby("nombre_serie").agg({
     "numero de temporada": "count",
     "rating": "mean"
