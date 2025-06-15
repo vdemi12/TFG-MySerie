@@ -24,43 +24,43 @@
 <title>cluster_SeasonsPageModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="88,-70 88,-195 408,-195 408,-70 88,-70"/>
 </g>
-<g id="clust2" class="cluster">
-<title>cluster_SeasonsPageModule_declarations</title>
-<polygon fill="none" stroke="black" points="296,-78 296,-130 400,-130 400,-78 296,-78"/>
-</g>
 <g id="clust4" class="cluster">
 <title>cluster_SeasonsPageModule_imports</title>
-<polygon fill="none" stroke="black" points="96,-78 96,-130 288,-130 288,-78 96,-78"/>
+<polygon fill="none" stroke="black" points="208,-78 208,-130 400,-130 400,-78 208,-78"/>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_SeasonsPageModule_declarations</title>
+<polygon fill="none" stroke="black" points="96,-78 96,-130 200,-130 200,-78 96,-78"/>
 </g>
 <!-- SeasonsPage -->
 <g id="node1" class="node">
 <title>SeasonsPage</title>
-<polygon fill="#ffffb3" stroke="black" points="392.31,-122 303.69,-122 303.69,-86 392.31,-86 392.31,-122"/>
-<text text-anchor="middle" x="348" y="-99.8" font-family="Times,serif" font-size="14.00">SeasonsPage</text>
+<polygon fill="#ffffb3" stroke="black" points="192.31,-122 103.69,-122 103.69,-86 192.31,-86 192.31,-122"/>
+<text text-anchor="middle" x="148" y="-99.8" font-family="Times,serif" font-size="14.00">SeasonsPage</text>
 </g>
 <!-- SeasonsPageModule -->
 <g id="node2" class="node">
 <title>SeasonsPageModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="328.86,-187 325.86,-191 304.86,-191 301.86,-187 197.14,-187 197.14,-151 328.86,-151 328.86,-187"/>
-<text text-anchor="middle" x="263" y="-164.8" font-family="Times,serif" font-size="14.00">SeasonsPageModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="298.86,-187 295.86,-191 274.86,-191 271.86,-187 167.14,-187 167.14,-151 298.86,-151 298.86,-187"/>
+<text text-anchor="middle" x="233" y="-164.8" font-family="Times,serif" font-size="14.00">SeasonsPageModule</text>
 </g>
 <!-- SeasonsPage&#45;&gt;SeasonsPageModule -->
 <g id="edge1" class="edge">
 <title>SeasonsPage&#45;&gt;SeasonsPageModule</title>
-<path fill="none" stroke="black" d="M316.39,-122.11C316.39,-122.11 316.39,-140.99 316.39,-140.99"/>
-<polygon fill="black" stroke="black" points="312.89,-140.99 316.39,-150.99 319.89,-140.99 312.89,-140.99"/>
+<path fill="none" stroke="black" d="M179.61,-122.11C179.61,-122.11 179.61,-140.99 179.61,-140.99"/>
+<polygon fill="black" stroke="black" points="176.11,-140.99 179.61,-150.99 183.11,-140.99 176.11,-140.99"/>
 </g>
 <!-- SeasonsPageRoutingModule -->
 <g id="node3" class="node">
 <title>SeasonsPageRoutingModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="280.48,-122 277.48,-126 256.48,-126 253.48,-122 103.52,-122 103.52,-86 280.48,-86 280.48,-122"/>
-<text text-anchor="middle" x="192" y="-99.8" font-family="Times,serif" font-size="14.00">SeasonsPageRoutingModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="392.48,-122 389.48,-126 368.48,-126 365.48,-122 215.52,-122 215.52,-86 392.48,-86 392.48,-122"/>
+<text text-anchor="middle" x="304" y="-99.8" font-family="Times,serif" font-size="14.00">SeasonsPageRoutingModule</text>
 </g>
 <!-- SeasonsPageRoutingModule&#45;&gt;SeasonsPageModule -->
 <g id="edge2" class="edge">
 <title>SeasonsPageRoutingModule&#45;&gt;SeasonsPageModule</title>
-<path fill="none" stroke="black" d="M238.78,-122.11C238.78,-122.11 238.78,-140.99 238.78,-140.99"/>
-<polygon fill="black" stroke="black" points="235.28,-140.99 238.78,-150.99 242.28,-140.99 235.28,-140.99"/>
+<path fill="none" stroke="black" d="M257.22,-122.11C257.22,-122.11 257.22,-140.99 257.22,-140.99"/>
+<polygon fill="black" stroke="black" points="253.72,-140.99 257.22,-150.99 260.72,-140.99 253.72,-140.99"/>
 </g>
 </g>
 </svg>

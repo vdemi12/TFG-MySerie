@@ -24,67 +24,67 @@
 <title>cluster_ProfilePageModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="8,-70 8,-195 654,-195 654,-70 8,-70"/>
 </g>
-<g id="clust2" class="cluster">
-<title>cluster_ProfilePageModule_declarations</title>
-<polygon fill="none" stroke="black" points="326,-78 326,-130 646,-130 646,-78 326,-78"/>
-</g>
 <g id="clust5" class="cluster">
 <title>cluster_ProfilePageModule_imports</title>
-<polygon fill="none" stroke="black" points="16,-78 16,-130 318,-130 318,-78 16,-78"/>
+<polygon fill="none" stroke="black" points="344,-78 344,-130 646,-130 646,-78 344,-78"/>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_ProfilePageModule_declarations</title>
+<polygon fill="none" stroke="black" points="16,-78 16,-130 336,-130 336,-78 16,-78"/>
 </g>
 <!-- OnlyAllowedCharactersDirective -->
 <g id="node1" class="node">
 <title>OnlyAllowedCharactersDirective</title>
-<polygon fill="#ffffb3" stroke="black" points="638.14,-122 433.86,-122 433.86,-86 638.14,-86 638.14,-122"/>
-<text text-anchor="middle" x="536" y="-99.8" font-family="Times,serif" font-size="14.00">OnlyAllowedCharactersDirective</text>
+<polygon fill="#ffffb3" stroke="black" points="328.14,-122 123.86,-122 123.86,-86 328.14,-86 328.14,-122"/>
+<text text-anchor="middle" x="226" y="-99.8" font-family="Times,serif" font-size="14.00">OnlyAllowedCharactersDirective</text>
 </g>
 <!-- ProfilePageModule -->
 <g id="node3" class="node">
 <title>ProfilePageModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="362.36,-187 359.36,-191 338.36,-191 335.36,-187 237.64,-187 237.64,-151 362.36,-151 362.36,-187"/>
-<text text-anchor="middle" x="300" y="-164.8" font-family="Times,serif" font-size="14.00">ProfilePageModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="375.36,-187 372.36,-191 351.36,-191 348.36,-187 250.64,-187 250.64,-151 375.36,-151 375.36,-187"/>
+<text text-anchor="middle" x="313" y="-164.8" font-family="Times,serif" font-size="14.00">ProfilePageModule</text>
 </g>
 <!-- OnlyAllowedCharactersDirective&#45;&gt;ProfilePageModule -->
 <g id="edge1" class="edge">
 <title>OnlyAllowedCharactersDirective&#45;&gt;ProfilePageModule</title>
-<path fill="none" stroke="black" d="M536,-122.11C536,-141.34 536,-169 536,-169 536,-169 372.62,-169 372.62,-169"/>
-<polygon fill="black" stroke="black" points="372.62,-165.5 362.62,-169 372.62,-172.5 372.62,-165.5"/>
+<path fill="none" stroke="black" d="M289.32,-122.11C289.32,-122.11 289.32,-140.99 289.32,-140.99"/>
+<polygon fill="black" stroke="black" points="285.82,-140.99 289.32,-150.99 292.82,-140.99 285.82,-140.99"/>
 </g>
 <!-- ProfilePage -->
 <g id="node2" class="node">
 <title>ProfilePage</title>
-<polygon fill="#ffffb3" stroke="black" points="415.81,-122 334.19,-122 334.19,-86 415.81,-86 415.81,-122"/>
-<text text-anchor="middle" x="375" y="-99.8" font-family="Times,serif" font-size="14.00">ProfilePage</text>
+<polygon fill="#ffffb3" stroke="black" points="105.81,-122 24.19,-122 24.19,-86 105.81,-86 105.81,-122"/>
+<text text-anchor="middle" x="65" y="-99.8" font-family="Times,serif" font-size="14.00">ProfilePage</text>
 </g>
 <!-- ProfilePage&#45;&gt;ProfilePageModule -->
 <g id="edge2" class="edge">
 <title>ProfilePage&#45;&gt;ProfilePageModule</title>
-<path fill="none" stroke="black" d="M348.39,-122.11C348.39,-122.11 348.39,-140.99 348.39,-140.99"/>
-<polygon fill="black" stroke="black" points="344.89,-140.99 348.39,-150.99 351.89,-140.99 344.89,-140.99"/>
+<path fill="none" stroke="black" d="M65,-122.11C65,-141.34 65,-169 65,-169 65,-169 240.42,-169 240.42,-169"/>
+<polygon fill="black" stroke="black" points="240.42,-172.5 250.42,-169 240.42,-165.5 240.42,-172.5"/>
 </g>
 <!-- ProfilePageRoutingModule -->
 <g id="node4" class="node">
 <title>ProfilePageRoutingModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="309.98,-122 306.98,-126 285.98,-126 282.98,-122 140.02,-122 140.02,-86 309.98,-86 309.98,-122"/>
-<text text-anchor="middle" x="225" y="-99.8" font-family="Times,serif" font-size="14.00">ProfilePageRoutingModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="637.98,-122 634.98,-126 613.98,-126 610.98,-122 468.02,-122 468.02,-86 637.98,-86 637.98,-122"/>
+<text text-anchor="middle" x="553" y="-99.8" font-family="Times,serif" font-size="14.00">ProfilePageRoutingModule</text>
 </g>
 <!-- ProfilePageRoutingModule&#45;&gt;ProfilePageModule -->
 <g id="edge3" class="edge">
 <title>ProfilePageRoutingModule&#45;&gt;ProfilePageModule</title>
-<path fill="none" stroke="black" d="M273.78,-122.11C273.78,-122.11 273.78,-140.99 273.78,-140.99"/>
-<polygon fill="black" stroke="black" points="270.28,-140.99 273.78,-150.99 277.28,-140.99 270.28,-140.99"/>
+<path fill="none" stroke="black" d="M553,-122.11C553,-141.34 553,-169 553,-169 553,-169 385.43,-169 385.43,-169"/>
+<polygon fill="black" stroke="black" points="385.43,-165.5 375.43,-169 385.43,-172.5 385.43,-165.5"/>
 </g>
 <!-- SharedModule -->
 <g id="node5" class="node">
 <title>SharedModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="122.42,-122 119.42,-126 98.42,-126 95.42,-122 23.58,-122 23.58,-86 122.42,-86 122.42,-122"/>
-<text text-anchor="middle" x="73" y="-99.8" font-family="Times,serif" font-size="14.00">SharedModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="450.42,-122 447.42,-126 426.42,-126 423.42,-122 351.58,-122 351.58,-86 450.42,-86 450.42,-122"/>
+<text text-anchor="middle" x="401" y="-99.8" font-family="Times,serif" font-size="14.00">SharedModule</text>
 </g>
 <!-- SharedModule&#45;&gt;ProfilePageModule -->
 <g id="edge4" class="edge">
 <title>SharedModule&#45;&gt;ProfilePageModule</title>
-<path fill="none" stroke="black" d="M73,-122.11C73,-141.34 73,-169 73,-169 73,-169 227.37,-169 227.37,-169"/>
-<polygon fill="black" stroke="black" points="227.37,-172.5 237.37,-169 227.37,-165.5 227.37,-172.5"/>
+<path fill="none" stroke="black" d="M363.61,-122.11C363.61,-122.11 363.61,-140.99 363.61,-140.99"/>
+<polygon fill="black" stroke="black" points="360.11,-140.99 363.61,-150.99 367.11,-140.99 360.11,-140.99"/>
 </g>
 </g>
 </svg>

@@ -24,43 +24,43 @@
 <title>cluster_RegisterPageModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="86,-70 86,-195 410,-195 410,-70 86,-70"/>
 </g>
-<g id="clust4" class="cluster">
-<title>cluster_RegisterPageModule_imports</title>
-<polygon fill="none" stroke="black" points="208,-78 208,-130 402,-130 402,-78 208,-78"/>
-</g>
 <g id="clust2" class="cluster">
 <title>cluster_RegisterPageModule_declarations</title>
-<polygon fill="none" stroke="black" points="94,-78 94,-130 200,-130 200,-78 94,-78"/>
+<polygon fill="none" stroke="black" points="296,-78 296,-130 402,-130 402,-78 296,-78"/>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_RegisterPageModule_imports</title>
+<polygon fill="none" stroke="black" points="94,-78 94,-130 288,-130 288,-78 94,-78"/>
 </g>
 <!-- RegisterPage -->
 <g id="node1" class="node">
 <title>RegisterPage</title>
-<polygon fill="#ffffb3" stroke="black" points="191.86,-122 102.14,-122 102.14,-86 191.86,-86 191.86,-122"/>
-<text text-anchor="middle" x="147" y="-99.8" font-family="Times,serif" font-size="14.00">RegisterPage</text>
+<polygon fill="#ffffb3" stroke="black" points="393.86,-122 304.14,-122 304.14,-86 393.86,-86 393.86,-122"/>
+<text text-anchor="middle" x="349" y="-99.8" font-family="Times,serif" font-size="14.00">RegisterPage</text>
 </g>
 <!-- RegisterPageModule -->
 <g id="node2" class="node">
 <title>RegisterPageModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="299.91,-187 296.91,-191 275.91,-191 272.91,-187 166.09,-187 166.09,-151 299.91,-151 299.91,-187"/>
-<text text-anchor="middle" x="233" y="-164.8" font-family="Times,serif" font-size="14.00">RegisterPageModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="329.91,-187 326.91,-191 305.91,-191 302.91,-187 196.09,-187 196.09,-151 329.91,-151 329.91,-187"/>
+<text text-anchor="middle" x="263" y="-164.8" font-family="Times,serif" font-size="14.00">RegisterPageModule</text>
 </g>
 <!-- RegisterPage&#45;&gt;RegisterPageModule -->
 <g id="edge1" class="edge">
 <title>RegisterPage&#45;&gt;RegisterPageModule</title>
-<path fill="none" stroke="black" d="M179.11,-122.11C179.11,-122.11 179.11,-140.99 179.11,-140.99"/>
-<polygon fill="black" stroke="black" points="175.61,-140.99 179.11,-150.99 182.61,-140.99 175.61,-140.99"/>
+<path fill="none" stroke="black" d="M316.89,-122.11C316.89,-122.11 316.89,-140.99 316.89,-140.99"/>
+<polygon fill="black" stroke="black" points="313.39,-140.99 316.89,-150.99 320.39,-140.99 313.39,-140.99"/>
 </g>
 <!-- RegisterPageRoutingModule -->
 <g id="node3" class="node">
 <title>RegisterPageRoutingModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="394.03,-122 391.03,-126 370.03,-126 367.03,-122 215.97,-122 215.97,-86 394.03,-86 394.03,-122"/>
-<text text-anchor="middle" x="305" y="-99.8" font-family="Times,serif" font-size="14.00">RegisterPageRoutingModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="280.03,-122 277.03,-126 256.03,-126 253.03,-122 101.97,-122 101.97,-86 280.03,-86 280.03,-122"/>
+<text text-anchor="middle" x="191" y="-99.8" font-family="Times,serif" font-size="14.00">RegisterPageRoutingModule</text>
 </g>
 <!-- RegisterPageRoutingModule&#45;&gt;RegisterPageModule -->
 <g id="edge2" class="edge">
 <title>RegisterPageRoutingModule&#45;&gt;RegisterPageModule</title>
-<path fill="none" stroke="black" d="M257.72,-122.11C257.72,-122.11 257.72,-140.99 257.72,-140.99"/>
-<polygon fill="black" stroke="black" points="254.22,-140.99 257.72,-150.99 261.22,-140.99 254.22,-140.99"/>
+<path fill="none" stroke="black" d="M238.28,-122.11C238.28,-122.11 238.28,-140.99 238.28,-140.99"/>
+<polygon fill="black" stroke="black" points="234.78,-140.99 238.28,-150.99 241.78,-140.99 234.78,-140.99"/>
 </g>
 </g>
 </svg>
